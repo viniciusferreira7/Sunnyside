@@ -217,5 +217,74 @@ $(function(){
     }
 
     $('#telephone').mask('(00)0000-0000');
-    
+
+    //Slider imagens
+
+    $(window).resize(function(){
+        if($(window).width() <= 775){
+            sliderImagens();
+
+        }else if($(window).width() > 775){
+            
+        }
+    })
+
+    var sliderImagens =  function(){
+            //Variaveis
+        var indiceAtual = 0;
+        var indiceMaximo = $('.peopleWraper').length;
+        var peopleWraper = $('.peopleWraper');
+
+
+        //Funcoes
+        slider();
+        alternarSlider();
+
+        function slider(){
+            peopleWraper.eq(indiceAtual).fadeIn();
+        }
+
+        function alternarSlider(){
+            setInterval(function(){
+                peopleWraper.eq(indiceAtual).fadeOut();
+                indiceAtual++;
+                if(indiceAtual == indiceMaximo){
+                    indiceAtual = 0;
+                }
+                peopleWraper.eq(indiceAtual).fadeIn();
+            },3000)
+        }
+    }   
+
+    $(window).resize(function(){
+        if($(window).width() <= 775){
+            sliderImagens();
+
+        }else if($(window).width() > 776){
+             //Variaveis
+        var indiceAtual = 0;
+        var indiceMaximo = $('.peopleWraper').length;
+        var peopleWraper = $('.peopleWraper');
+
+
+        //Funcoes
+        slider();
+        alternarSlider();
+
+        function slider(){
+            peopleWraper.eq(indiceAtual).fadeIn();
+        }
+
+        function alternarSlider(){
+            setInterval(function(){
+                peopleWraper.eq(indiceAtual).fadeIn();
+                indiceAtual++;
+                if(indiceAtual == indiceMaximo){
+                    indiceAtual = 0;
+                }
+                peopleWraper.eq(indiceAtual).fadeIn();
+            },0001)
+        }   
+        }
+    })
 })

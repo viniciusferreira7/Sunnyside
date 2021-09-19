@@ -796,11 +796,17 @@ footer a:hover{
     }
 
     #client-wraper{
+        position: relative;
         flex-direction: column;
         padding:0 10% 20px 10%;
+        height: 250px;
     }
 
     #people-wraper{
+        display: none;
+        position:absolute;
+        left:50%;
+        transform: translatex(-50%);
         margin-bottom:40px;
     }
 
