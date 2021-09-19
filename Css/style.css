@@ -1,0 +1,892 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+.clear{
+    clear: both;
+}
+
+
+    /*Formulário sendo enviado*/
+
+#bg-envio{
+    display:none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index:4
+}
+
+#bg-enviado{
+    display:none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index:5;
+}
+
+#enviado{
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    width:100%;
+    max-width:250px;
+    height:50px;
+    line-height: 25px;
+    text-align:center;
+    background-color:white;
+    border:3px solid black;
+    border-radius:20px;
+}
+
+#enviado p{
+    padding:10px 1% 20px  1%;
+    font-family:"Lato";
+    font-weight:500;
+}
+
+#contato-envio{
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    width:100%;
+    max-width:250px;
+    height:50px;
+    text-align:center;
+    background-color:white;
+    border:3px solid black;
+    border-bottom:none;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+    border-radius: 20px;
+}
+
+#contato-envio p{
+    padding:20px 1% 15px  1%;
+    font-family:"Lato";
+    font-weight:500;
+}
+
+#color-wraper{
+    display:flex;
+    width:100%;
+}
+
+#yellow-load{
+    width:15%;
+    padding-top:8%;
+    background-color:#ffd302;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#pink-load{
+    width:35%;
+    padding-top:8%;
+    background-color: #fe6f61;
+}
+
+#blue-load{
+    width:50%;
+    padding-top:8%;
+    background-color:#59c6fe;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+    /*Formulario*/
+
+#bg{
+    display: none;
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+
+#form-wraper{
+    width:100%;
+    max-width:400px;
+    border-radius:30px;
+    padding:60px 4% 40px 4%;
+    background-color:white;
+    box-shadow: 15px 15px 2px -4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#form-wraper .btnx-contact{
+    width:34px;
+    height:34px;
+    border-radius:17px;
+    right: 2%;
+    top: 2%;
+}
+
+#form-wraper h2{
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+    font-family:"Lato";
+    margin-bottom:30px;
+}
+
+form input{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    border-radius: 5px;
+    padding-left:8px;
+    margin-bottom:30px;
+    border:2px solid #878787;
+    cursor: pointer;
+}
+
+form input[type="text"]:hover{
+    border: 3px solid #2b2929;
+}
+
+form input[type="submit"]{
+    display: block;
+    max-width:150px;
+    margin: 0 auto;
+    display: block;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight:500;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#form-wraper input[type="submit"]:hover{
+    color:#2b2929;
+    background-color: rgb(255,211,1);
+}
+
+    /*header*/
+
+
+header{
+    width:100%;
+    padding: 17px 4%;
+    max-width:2880px;
+    height:100%;
+    max-height:1600px;
+    background-image: url(../imagens/Desktop/image-header.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+ header section{
+    float: left;
+}
+
+header section p{
+    font-family:"Lato";
+    font-weight:900;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+#menu-mobile{
+    display: none;
+}
+
+.btnx{
+    width:28px;
+    height:28px;
+    display: block;
+    background-image:url(../imagens/Mobile/letra-x\ \(2\).png);
+    background-size: cover;
+    border:2px solid #878787;
+    border-radius: 14px;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5%;
+    top: 2%;
+}
+
+.btnx:hover{
+    background-image: url();
+    background-image:url(../imagens/Mobile/letra-x\ \(3\).png);
+    border-color: #2b2929;
+}
+
+#menu-mobile ul{
+    display:none;
+    text-align: center;
+    width:90%;
+    padding:20px 0;
+    position:absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -40%);
+    background-color: white;
+    border-radius:5px;
+    border-top-right-radius: 20px;
+}
+
+#menu-mobile li{
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+#menu-mobile a{
+    font-size:24px;
+    line-height: 70px;
+    color:#878787;
+}
+
+#menu-mobile li a:hover{
+    display: inline-block;
+    width:150px;
+    font-weight: bold;
+    color:#2b2929;
+    border-radius: 75px;
+    background-color: rgb(255,211,1);
+}
+
+
+header #menu-desktop{
+    float: right;
+}
+
+header #menu-desktop ul li{
+    float: left;
+    padding-top: 8px;
+    padding-left:50px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+li a{
+    font-family:"Roboto";
+    font-size:14px;
+    font-weight:500;
+    color:white;
+    text-decoration: none;
+}
+
+#menu-desktop a:hover{
+    border-bottom:1px solid white;
+}
+
+
+header article{
+    width:100%;
+    text-align:center;
+}
+
+header article{
+    margin-top: 134px;
+    font-size:60px;
+    font-family:"STIX Two Text";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+}
+
+figure img{
+    width:70px;
+    height:100px;
+    position:absolute;
+    top:43%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+    /*Corpo do site*/
+
+main{
+    width:100%;
+}   
+
+#artigo-egg{
+    display:flex;
+    width:100%;
+}
+
+main #artigo-egg section{
+    width:50%;
+    padding:10% 8% 40px 10%;
+}
+
+#artigo-egg h1{
+    width:55%;
+    font-size:28px;
+    font-family:"Playfair Display";
+    font-weight:900;
+    color:#2b2a2a;
+    margin-bottom: 30px;
+}
+
+#artigo-egg p{
+    width:64%;
+    font-size:14px;
+    color:#3f4c63;
+    line-height:23px;
+    font-weight: normal;
+    margin-bottom:28px;
+    
+}
+
+main h5{
+    padding-left: 6px;
+    text-transform: uppercase;
+    font-family:"Source Serif Pro";
+    font-size: 16px;
+    z-index:1;
+    position:relative;
+    top:8px;
+    cursor: pointer;
+}
+
+main #yellow-bar{
+    width:115px;
+    height:8px;
+    border-radius:55px;
+    background-color:rgba(255, 255, 0, 0.8);
+    cursor: pointer;
+}
+
+
+
+main #artigo-egg aside{
+    width:50%;
+}
+
+aside #image-egg{
+    width:100%;
+    min-height:502.89px;
+    padding-top:70%;
+    background-image:url(../imagens/desktop/image-transform.jpg);
+    background-size:100% 100% ;
+}
+
+#artigo-calice{
+    display: flex;
+    width:100%;
+}
+
+main #artigo-calice #calice{
+    order: 2;
+    width:50%;
+    padding:10% 5% 70px 12%;
+}
+
+main #artigo-calice aside {
+    order:1;
+    width:50%;
+}
+
+#artigo-calice figure{
+    width:100%;
+    min-height:502.89px;
+    padding-top:70%;
+    background-image:url(../imagens/Desktop/image-stand-out.jpg);
+    background-size:100% 100%;
+
+}
+
+#artigo-calice h1{
+    width:65%;
+    font-size:28px;
+    font-family:"Playfair Display";
+    font-weight:900;
+    color:#2b2a2a;
+    margin-bottom: 25px;
+}
+
+#artigo-calice p{
+    width:64%;
+    font-size:14px;
+    color:#3f4c63;
+    line-height:23px;
+    font-weight: normal;
+    margin-bottom:28px;
+}
+
+ #red-bar{
+    width:115px;
+    height:8px;
+    border-radius:55px;
+    background-color:rgba(255, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+#artigo-cereja-laranja{
+    display: flex;
+    width:100%;
+    min-height:472.14px ;
+}
+
+#graphic{
+    width:100%;
+    min-height: 472.14px;
+    padding-top:320px;
+    background-image: url(../imagens/Desktop/image-graphic-design.jpg);
+    background-size:100% 100%;
+    text-align: center;
+}
+
+#graphic h1{
+    font-family: "Source Serif Pro";
+    font-size:22px;
+    margin-bottom:22px;
+    text-transform: capitalize;
+    color:#1a2e25;
+}
+
+#graphic p{
+    margin:0 auto;
+    width:65%;
+    line-height:20px;
+    font-size:13px;
+    font-family: "Roboto";
+    font-weight:500;
+    color:#223d31;
+}
+
+#photography{
+    width:100%;
+    min-height: 472.14px;
+    padding-top:320px;
+    background-image: url(../imagens/desktop/image-photography.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#photography h1{
+    font-family: "Source Serif Pro";
+    font-size:22px;
+    margin-bottom:22px;
+    text-transform: capitalize;
+    color:#222e3d;
+}
+
+#photography p{
+    margin:0 auto;
+    width:65%;
+    line-height:20px;
+    font-size:13px;
+    font-family: "Roboto";
+    font-weight:500;
+    color:#2b3a4d;
+}
+
+    /*Clientes*/
+
+#client{
+    widtH:100%;
+    text-align:center;
+    padding:8% 9% 8% 9%;
+}
+
+
+#client h1{
+    padding:0 0 60px 0 ;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    font-size:13px;
+    font-family:"Noto Serif JP";
+    color:#757575;
+}
+
+#client-wraper{
+    display: flex;
+    width:100%;
+    padding:0 2% 20px 2%;
+}
+/*limpar flutação*/
+
+#people-wraper{
+    width:100%;
+    text-align: center;
+}
+
+#people-wraper:nth-of-type(1) figure{
+    width:50px;
+    height:50px;
+    background-image: url(../imagens/image-emily.jpg);
+    background-size: 100% 100%;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+#people-wraper:nth-of-type(2) figure{
+    width:50px;
+    height:50px;
+    background-image: url(../imagens/image-thomas.jpg);
+    background-size: 100% 100%;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+#people-wraper:nth-of-type(3) figure{
+    width:50px;
+    height:50px;
+    background-image: url(../imagens/image-jennie.jpg);
+    background-size: 100% 100%;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+#people-wraper p{
+    width:80%;
+    padding:10% 0;
+    margin:0 auto;
+    font-family:"Noto Serif JP";
+    font-size:12px;
+    line-height:18px;
+    color:#3f3f40;
+}
+
+#people-wraper h4{
+    font-family:"Playfair Display";
+    font-weight:900;
+    color:#2a2b2b;
+    margin-bottom:10px;
+}
+
+#people-wraper h6{
+    font-family:"Playfair Display";
+    font-size:12px;
+    font-weight:bold;
+    color:#b9b8b8;
+    margin-bottom:13px;
+}
+
+#galeria-wraper{
+    width:100%;
+}
+
+#galeria-wraper figure:nth-of-type(1){
+    float:left;
+    width:25%;
+    padding-top:30%;
+    background-image: url(../imagens/Desktop/image-gallery-milkbottles.jpg);
+    background-size: 100% 100%;
+}
+
+#galeria-wraper figure:nth-of-type(2){
+    float:left;
+    width:25%;
+    padding-top:30%;
+    background-image:url(../imagens/Desktop/image-gallery-orange.jpg);
+    background-size: 100% 100%;
+}
+
+#galeria-wraper figure:nth-of-type(3){
+    float:left;
+    width:25%;
+    padding-top:30%;
+    background-image:url(../imagens/Desktop/image-gallery-cone.jpg);
+    background-size: 100% 100%;
+}
+
+#galeria-wraper figure:nth-of-type(4){
+    float:left;
+    width:25%;
+    padding-top:30%;
+    background-image:url(../imagens/Desktop/image-gallery-sugarcubes.jpg);
+    background-size: 100% 100%;
+}
+
+footer{
+    width:100%;
+    background-color:#75c2b2;
+    text-align:center;
+}
+
+footer h3{
+    padding:45px 0  35px 0;
+    font-family:"Lato";
+    font-weight:900;
+    font-size:20px;
+    color:#304736;
+    cursor:pointer;
+}
+
+footer  nav{
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+footer nav li {
+    display:inline-block;
+    margin-right: -4px;
+    padding-left:50px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+footer nav li a{
+    font-family:"Roboto";
+    font-size:14px;
+    font-weight:500;
+    color:#304736 ;
+    cursor:pointer;
+}
+
+footer a:hover{
+    color: white;
+}
+
+#social-wraper{
+    width: 100%;
+}
+
+#social-wraper figure{
+    display: inline-block;
+    margin-right: -4px;
+    width:16px;
+    height:16px;
+    margin: 50px 18px 40px 0;
+    transform: translateX(28px);
+}
+
+#social-wraper a:nth-of-type(1) figure {
+    background-image: url(../imagens/facebook.png);
+    background-size:100% 100%;
+}
+
+#social-wraper a:nth-of-type(2) figure {
+    background-image: url(../imagens/instagram.png);
+    background-size:100% 100%;
+}
+
+#social-wraper a:nth-of-type(3) figure {
+    background-image: url(../imagens/twitter.png);
+    background-size:100% 100%;
+}
+
+#social-wraper a:nth-of-type(4) figure {
+    background-image: url(../imagens/pinterest.png);
+    background-size:100% 100%;
+}
+
+    /*Aplicando hover nos logos da redes sociais*/
+
+#social-wraper a:nth-of-type(1) figure:hover {
+    background-image: url(../imagens/facebook\ \(1\).png);
+    background-size:100% 100%;
+}
+
+#social-wraper a:nth-of-type(2) figure:hover {
+    background-image: url(../imagens/instagram\ \(1\).png);
+    background-size:100% 100%;
+}
+
+#social-wraper a:nth-of-type(3) figure:hover {
+    background-image: url(../imagens/twitter\ \(1\).png);
+    background-size:100% 100%;
+}
+
+#social-wraper a:nth-of-type(4) figure:hover {
+    background-image: url(../imagens/pinterest\ \(1\).png);
+    background-size:100% 100%;
+}
+
+    /*MEDIA QUERY*/
+
+@media screen and (max-width:900px){
+    header article{
+        position: relative;
+        top: -6%;
+    }
+}
+
+
+@media screen and (max-width:896px){
+    header figure img{
+        position:absolute;
+        top:50%;
+    }
+}
+
+@media screen and (max-width:775px){
+    #artigo-egg{
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    main #artigo-egg section{
+        width:100%;
+        padding:10% 25% 80px 25%;
+    }
+    
+    #artigo-egg h1{
+        width:100%;
+    }
+    
+    #artigo-egg p{
+        width:100%;
+    }
+      
+    main #yellow-bar{
+        margin:0 auto;
+    }
+    
+    main #artigo-egg aside{
+        width:100%;
+    }
+    
+    aside #image-egg{
+        width:100%;
+        min-height: none;
+        padding-top:65%;
+        background-image:url(../imagens/desktop/image-transform.jpg);
+        background-size:100% 100% ;
+    }
+
+    
+    #artigo-calice{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main #artigo-calice #calice{
+        order: 2;
+        width:100%;
+        padding:10% 25% 70px 25%;
+    }
+
+    main #artigo-calice aside {
+        order:1;
+        width:100%;
+    }
+
+    #artigo-calice figure{
+        width:100%;
+        min-height: none;
+        padding-top:65%;
+    }
+
+    #artigo-calice h1{
+        width:100%;
+    }
+
+    #artigo-calice p{
+        width:100%;
+    }
+
+    #red-bar{
+        margin:0 auto;
+    }
+
+    #artigo-cereja-laranja{
+        flex-direction: column;
+    }
+
+    #client-wraper{
+        flex-direction: column;
+        padding:0 10% 20px 10%;
+    }
+
+    #people-wraper{
+        margin-bottom:40px;
+    }
+
+    #galeria-wraper figure:nth-of-type(1){
+        float:left;
+        width:50%;
+        padding-top: 60%;
+    }
+    
+    #galeria-wraper figure:nth-of-type(2){
+        float:left;
+        width:50%;
+        padding-top: 60%;
+    }
+    
+    #galeria-wraper figure:nth-of-type(3){
+        float:left;
+        width:50%;
+        padding-top: 60%;
+    }
+    
+    #galeria-wraper figure:nth-of-type(4){
+        float:left;
+        width:50%;
+        padding-top: 60%;
+        
+    }
+    
+}
+
+@media screen and (max-width:700px){
+   header{
+        background-image: url(../imagens/Mobile/image-header.jpg);
+    }
+
+   header figure img{
+        position:absolute;
+        top:59%;
+    }
+}
+
+@media screen and (max-width:576px){
+    #menu-desktop{
+        display: none;
+    }
+
+    #menu-mobile{
+        float:right;
+        width:24px;
+        height:24px;
+        display: block;
+        background-image:url(../imagens/menu-de-tres-linhas.png);
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    #menu-mobile:hover{
+        background-image:url(../imagens/Mobile/menu-de-tres-linhas\ \(1\).png);
+    }
+
+}   
+
+
+/*
+OBS:
+    Quando eu clicar no menu mobile tenho que aplicar um display none no article e figure do header.
+*/
+
+/*
+OBS:
+
+    *terminar quinta-feira as medias query 
+
+        lembre-se qunado mais você se dedicar mais rapido ira conseguir um emprego na aréa e sair daquele lugar chato
+
+
+    TAMANHOS DE TELA PARA MEDIA QUERY
+
+    *480px // Extra small screen.
+    *768px // Small screen.
+    *992px // Medium screen.
+    *1200px // Large screen.
+    *1600px // Extra Large screen.
+    1900px // Extra Large screen.
+*/
+
+
+
+
