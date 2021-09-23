@@ -14,7 +14,7 @@ Uma landing page responsiva com validação de contato.
 
 ## Mobile design
 
-Menu mobile adicionado adicionado com dinamicamente com JavaScript e jQuery.
+Menu mobile adicionado dinamicamente com JavaScript e jQuery.
 <br />
 
 <img src="imagens/mobile-design (1).jpeg" alt="" height="300">
