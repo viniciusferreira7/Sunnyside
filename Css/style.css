@@ -293,6 +293,11 @@ header article{
 }
 
 header article{
+    width:100%;
+    padding:0 2%;
+}
+
+header article h1{
     margin-top: 134px;
     font-size:60px;
     font-family:"STIX Two Text";
@@ -865,6 +870,10 @@ footer a:hover{
 
     #menu-mobile:hover{
         background-image:url(../imagens/Mobile/menu-de-tres-linhas\ \(1\).png);
+    }
+
+    header article{
+        font-size:55px;
     }
 
 }   

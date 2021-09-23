@@ -260,7 +260,9 @@ $(function(){
         if($(window).width() <= 775){
             sliderImagens();
 
-        }else if($(window).width() > 776){
+         }
+          
+        if($(window).width() > 776){
              //Variaveis
         var indiceAtual = 0;
         var indiceMaximo = $('.peopleWraper').length;
