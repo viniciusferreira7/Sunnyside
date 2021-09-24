@@ -525,7 +525,7 @@ main #artigo-calice aside {
     text-align: center;
 }
 
-#people-wraper:nth-of-type(1) figure{
+.Emily figure{
     width:50px;
     height:50px;
     background-image: url(../imagens/image-emily.jpg);
@@ -534,16 +534,17 @@ main #artigo-calice aside {
     margin: 0 auto;
 }
 
-#people-wraper:nth-of-type(2) figure{
-    width:50px;
+.Thomas figure{
+   width:50px;
     height:50px;
     background-image: url(../imagens/image-thomas.jpg);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     border-radius: 25px;
     margin: 0 auto;
 }
 
-#people-wraper:nth-of-type(3) figure{
+.Jennie figure{
     width:50px;
     height:50px;
     background-image: url(../imagens/image-jennie.jpg);
@@ -576,6 +577,43 @@ main #artigo-calice aside {
     color:#b9b8b8;
     margin-bottom:13px;
 }
+
+.slick-dotted ul{
+    list-style-type:none;
+    text-align: center;
+    position: relative;
+    margin-top:10px;
+}
+
+.slick-dotted li{
+    display:inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+    outline:0;
+}
+
+.slick-dotted li button{
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+    border-width:0;
+    color:#d8d8d8;
+    background-color: #d8d8d8;
+    cursor:pointer;
+}
+
+li.slick-active button{
+    color:#3b3d3f;
+    background-color:#3b3d3f;
+    ;
+} 
+
+.slick-slide:focus{
+    outline: 0;
+}
+
 
 #galeria-wraper{
     width:100%;
@@ -801,17 +839,12 @@ footer a:hover{
     }
 
     #client-wraper{
-        position: relative;
+        width:100%;
         flex-direction: column;
         padding:0 10% 20px 10%;
-        height: 250px;
     }
 
     #people-wraper{
-        display: none;
-        position:absolute;
-        left:50%;
-        transform: translatex(-50%);
         margin-bottom:40px;
     }
 

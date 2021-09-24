@@ -220,7 +220,28 @@ $(function(){
 
     //Slider imagens
 
-    $(window).resize(function(){
+
+    $('#client .clientWraper').slick({
+        centerMove:false,
+        slidesToShow:3,
+        arrows:false,
+        responsive:[
+            {
+            breakpoint:775,
+            settings:{
+                arrows:false,
+                slidesToShow:1,
+                centerMove:true,
+                autoplaySpeed:3000,
+                autoplay:true,
+                dots:true,
+                pauseOnFocus:false,
+            }
+        }
+    ]
+    })
+
+   /* $(window).resize(function(){
         if($(window).width() <= 775){
             sliderImagens();
 
@@ -288,5 +309,5 @@ $(function(){
             },0001)
         }   
         }
-    })
+    })*/
 })
