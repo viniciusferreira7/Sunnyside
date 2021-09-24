@@ -753,7 +753,7 @@ footer a:hover{
 
 @media screen and (max-height:590px){
     header{
-        height:90%;
+        height:98%;
     }
 }
 
@@ -920,9 +920,15 @@ footer a:hover{
 }    
 
 @media screen and (max-width:400px){
+    header{
+
+    }
+
     header article h1{
         font-size:40px;
     }   
+
+
 
 }
 
