@@ -241,6 +241,10 @@ $(function(){
     ]
     })
 
+    $('.nav a').clikc(function(e){
+        e.preventDefault();
+    })
+
    /* $(window).resize(function(){
         if($(window).width() <= 775){
             sliderImagens();
