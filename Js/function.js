@@ -241,7 +241,7 @@ $(function(){
     ]
     })
 
-    $('.nav a').clikc(function(e){
+    $('.nav a').click(function(e){
         e.preventDefault();
     })
 
