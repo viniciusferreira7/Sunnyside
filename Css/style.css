@@ -750,14 +750,7 @@ footer a:hover{
 }
 
     /*MEDIA QUERY*/
-
-@media screen and (max-height:590px){
-    header{
-        height:98%;
-    }
-}
-
-
+    
 @media screen and (max-width:900px){
     header article{
         position: relative;
