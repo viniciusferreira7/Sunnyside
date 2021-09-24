@@ -299,7 +299,7 @@ header article{
 
 header article h1{
     margin-top: 134px;
-    font-size:60px;
+    font-size:clamp(30px, 60px, 80px);
     font-family:"STIX Two Text";
     font-weight: 700;
     text-transform: uppercase;
