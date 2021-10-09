@@ -6,8 +6,8 @@ Uma landing page responsiva com validação de contato.
 
 ## Desktop design
 
+<img src="imagens/sunnysideDesktop.gif" width="450" height="300">
 <img src="imagens/desktop-design (1).jfif" alt="" height="300">
-
 <img src="imagens/desktop-design (2).jpeg" alt="" height="300">
 <br />
 <br />
@@ -17,6 +17,7 @@ Uma landing page responsiva com validação de contato.
 Menu mobile adicionado dinamicamente com JavaScript e jQuery.
 <br />
 
+<img src="imagens/sunnysideMobile.gif" width="150" height="300">
 <img src="imagens/mobile-design (1).jpeg" alt="" height="300">
 <img src="imagens/mobile-menu-design (3).jpeg" alt="" height="300">
 

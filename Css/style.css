@@ -909,7 +909,13 @@ footer a:hover{
         font-size:55px;
     }
 
-}   
+}
+
+@media screen and (max-width:506px){
+    header article h1{
+        font-size:55px;
+    }   
+}
 
 @media screen and (max-width:400px){
     header article h1{
