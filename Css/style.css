@@ -668,14 +668,14 @@ footer h3{
 
 footer  nav{
     position: relative;
-    left: 50%;
-    transform: translatex(-50%);
+    left: 54%;
+    transform: translatex(-54%);
 }
 
 footer nav li {
     display:inline-block;
     margin-right: -4px;
-    padding-left:50px;
+    padding: 0 25px;
     list-style-type: none;
     list-style-position: inside;
 }
@@ -702,7 +702,7 @@ footer a:hover{
     width:16px;
     height:16px;
     margin: 50px 18px 40px 0;
-    transform: translateX(28px);
+    transform: translateX(14px);
 }
 
 #social-wraper a:nth-of-type(1) figure {
